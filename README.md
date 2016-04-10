@@ -23,7 +23,7 @@ etree1<-addControl(etree1,at=1, prob=.99, severity=.9, name="heat sensor detects
 
 etree1<-addControl(etree1,at=2, prob=.99, severity=.3, name="valve operates")
 
-etree1<-addControl(etree1, at=5, prob=.7, severity=.3, name="manual firefight", overwrite=TRUE))
+etree1<-addControl(etree1, at=5, prob=.7, severity=.3, name="manual firefight", overwrite=TRUE)
 
 etree1<-addOutcome(etree1, at=6, severity=.7, name="operators worst case", overwrite=TRUE)
 
@@ -31,4 +31,4 @@ etree1<-addOutcome(etree1, at=5, severity=.3, name="operators best case")
 
 etree1<-addOutcome(etree1, at=4, severity=.1,name="auto water spray")
 
-etree1[,1:7]
+etree1[,1:10]

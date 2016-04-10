@@ -21,7 +21,7 @@ addOutcome<-function(DF, at, name="", severity=NULL, description="", overwrite=F
 					
 					
 					
-					
+		thisLevel<-DF$Level[parent]+1			
 					
 					
 					
