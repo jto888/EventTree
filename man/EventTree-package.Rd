@@ -27,18 +27,9 @@ Maintainer: Jacob T. Ormerod <jake@openreliability.org>
   Center
   
   O'Connor, Patrick D.T. (1991) Practical Reliability Engineering  John Wiley & Sons
-  
-  Vesely, W.E., Goldberg, F.F., Roberts, N.H., Haasl, D.F. (1981)  Fault Tree Handbook
-  U.S.  Nuclear Regulatory Commission 
-  
-  Vesely, W.E., Stamatelato, M., Dugan, J., Fragola, J., Minarick, J., Railsback, J. (2002)
-  Fault Tree Handbook with Aerospace Applications   NASA
-  
-  Doelp, L.C., Lee, G.K., Linney, R.E., Ormsby R.W. (1984) Quantitative fault tree analysis: Gate-by-gate method Plant/Operations Progress
-Volume 3, Issue 4 American Institute of Chemical Engineers
 }
 
-\keyword{ package }
+\keyword{ risk }
 
 
 

@@ -52,3 +52,23 @@ ET_FIELDS<-c("ID",
 	"Child5",
 	"Description"
 )
+
+	
+
+etree.test<-function(DF) {		
+	if(class(DF)!="data.frame") {	
+		return(FALSE)
+	}else{	
+	if(length(names(DF))!=14)  { 	
+		return(FALSE)
+	}else{	
+		etree_test<-NULL
+		for(nm in 1:14) {etree_test<-c(etree_test,names(DF)[nm]==ET_FIELDS[nm])}
+		if(!all(etree_test)) {
+				return(FALSE)
+			}else{
+			return(TRUE)
+			}
+		}
+	}
+}

@@ -30,7 +30,8 @@ Returns the input event tree dataframe appended with a row for the defined outco
 
 \examples{
 mytree <- etree.make(name="conveyor belt fire")
-mytree <-addCtrl(mytree,at=1, prob=.99, severity=.9, name="heat sensor detects")
+mytree <-addControl(mytree,at=1, prob=.99, severity=.9, name="heat sensor detects")
+mytree<-addOutcome(mytree, at=2, name="alarm sounds")
 }
 
 \keyword{ logic, risk, failure }

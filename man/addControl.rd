@@ -31,7 +31,7 @@ Returns the input event tree dataframe appended with entry rows for the defined 
 
 \examples{
 mytree <- etree.make(name="conveyor belt fire")
-mytree <-addCtrl(mytree,at=1, prob=.99, severity=.9, name="heat sensor detects")
+mytree <-addControl(mytree,at=1, prob=.99, severity=.9, name="heat sensor detects")
 }
 
 \keyword{ logic, risk, failure }

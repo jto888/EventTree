@@ -1,4 +1,6 @@
 export(
 addControl,
 addOutcome,
-etree.make)
+etree.make,
+etree.test,
+etree2json)

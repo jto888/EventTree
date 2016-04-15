@@ -1,9 +1,5 @@
 addOutcome<-function(DF, at, name="", severity=NULL, description="", overwrite=FALSE)  {					
-				
-	if(length(names(DF))!=14)   stop("first argument must be a fault tree")				
-	etree_test<-NULL				
-	for(nm in 1:14) {etree_test<-c(etree_test,names(DF)[nm]==ET_FIELDS[nm])}				
-	if(!all(etree_test))   stop("first argument must be an event tree")				
+	if(!etree.test(DF)) stop("first argument must be an event tree")						
 					
 	parent<-which(DF$ID== at)				
 	if(length(parent)==0) {stop("connection reference not valid")}				
