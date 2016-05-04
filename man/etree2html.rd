@@ -15,7 +15,6 @@ etree2html(DF,SVGwidth=1000,SVGheight=500,SVGleft_margin=100,
 \item{DF}{ An EventTree dataframe object.}
 \item{SVGwidth}{width in pixels for the SVG display.}
 \item{SVGheight}{height in pixels for the SVG display.}
-\item{SVGheight}{height in pixels for the SVG display.}
 \item{SVGleft_margin}{placement of the first node of event tree display from left in pixels.}
 \item{SVGright_margin}{placement of the last node of event tree display from right in pixels.}
 \item{dir}{A character string for an absolute directory in which R can read and write.}

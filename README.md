@@ -3,13 +3,13 @@ an event tree back office prototype
 
 This R package is used to build  an event tree as a dataframe object. 
 A tree is constructed by an initial etree.make() call.  Subsequent addition of 
-add... functions build up the tree.  Event tree calculations proceed during the tree construction.
+addControl and addOutcome functions build up the tree.  Event tree calculations proceed during the tree construction.
 
 There is no GUI associated with this package, nor is one expected in the R environment. A user is expected
 to code scripts defining the tree as a final version.
 
-Output is currently read as a sub-view of the dataframe object holding the tree. Generation of HTML that will
-display the event tree utilizing the D3 javascript library is under development.
+An HTML output is now available to display the event tree in the browser. Internet connection is required to load
+the D3 javascript library via cdn. 
 
 Example Scripts:
 
@@ -32,3 +32,11 @@ etree1<-addOutcome(etree1, at=5, severity=.3, name="operators best case")
 etree1<-addOutcome(etree1, at=4, severity=.1,name="auto water spray")
 
 etree1[,1:10]
+
+## generate the html to the default drive
+etree2html(etree1)
+
+## view in browser from default drive
+browseURL(etree1)
+
+
